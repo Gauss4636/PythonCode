@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1649fe79-3b38-4ece-b919-d1be118679df" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TVOv4jgqdZWN2SJbh9NcDPd2x0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.GongDanCL">
+    <configuration name="GongDanCL" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WeeklyWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GongDanCL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WeeklyWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WeeklyExcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WeeklyWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WeeklyExcel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.GongDanCL" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.WeeklyExcel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="989" y="287" key="FileChooserDialogImpl" timestamp="1576118785378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="989" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576118785378" />
+    <state width="1362" height="244" key="GridCell.Tab.0.bottom" timestamp="1576036997601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576036997601" />
+    <state width="1362" height="244" key="GridCell.Tab.0.center" timestamp="1576036997601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="244" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576036997601" />
+    <state width="1362" height="244" key="GridCell.Tab.0.left" timestamp="1576036997601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="244" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576036997601" />
+    <state width="1362" height="244" key="GridCell.Tab.0.right" timestamp="1576036997601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="244" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576036997601" />
+    <state width="1362" height="340" key="GridCell.Tab.1.bottom" timestamp="1575970464491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575970464491" />
+    <state width="1362" height="340" key="GridCell.Tab.1.center" timestamp="1575970464491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575970464491" />
+    <state width="1362" height="340" key="GridCell.Tab.1.left" timestamp="1575970464490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575970464490" />
+    <state width="1362" height="340" key="GridCell.Tab.1.right" timestamp="1575970464491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575970464491" />
+    <state x="782" y="236" key="SettingsEditor" timestamp="1575948433969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="236" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575948433968" />
+    <state x="624" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575513058622">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575513058622" />
+    <state x="742" y="252" width="672" height="678" key="search.everywhere.popup" timestamp="1575878500822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="252" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575878500822" />
+  </component>
+</project>
