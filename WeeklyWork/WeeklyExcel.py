@@ -125,9 +125,12 @@ def Addinfotolist(info_name, file_name):
         list.append(i.string)
     return list
 
+
 totalSizeYL, freeSizeYL = [], []
 cpuCountListYL, memSizeListYL = [], []
-#通过接口获取医疗云主机的虚拟cpu总数，内存大小
+
+
+# 通过接口获取医疗云主机的虚拟cpu总数，内存大小
 def YLInfo():
     # 获取主机的id，根据主机的id查询对应主机的虚拟cpu数目以及内存大小
     hostId_url = "http://10.10.0.7:8080/cas/casrs/host/"
@@ -150,26 +153,28 @@ def YLInfo():
         memSizeListYL.append(round(float(soupHostInfoYL.find('memorysize').string) / 1024, 2))
 
     # 调取接口查询ipsan存储总值和实际可用大小为大
-
     ShareFile_url = 'http://10.10.0.7:8080/cas/casrs/host/id/%s/storage' % host_id[0]
     resp = requests.get(ShareFile_url, auth=HTTPDigestAuth('yd_gaosi', 'jsdk@123'))
     shareFileInfo = resp.text
     shareFileInfo = re.sub('totalSize', 'totalsize', shareFileInfo, count=0, flags=0)
     shareFileInfo = re.sub('freeSize', 'freesize', shareFileInfo, count=0, flags=0)
     soupSFYL = BeautifulSoup(shareFileInfo, "html.parser")
-    #将存储的单位换算成TB然后存入列表中
+    # 将存储的单位换算成TB然后存入列表中
     totalSizeSoupYL = soupSFYL.findAll('totalsize')
     for i in totalSizeSoupYL:
         totalSizeYL.append(round(int(i.string) / 1024 ** 2, 2))
     freeSizeSoupYL = soupSFYL.findAll('freesize')
     for i in freeSizeSoupYL:
         freeSizeYL.append(round(int(i.string) / 1024 ** 2, 2))
-    print(cpuCountListYL, '\n', memSizeListYL, '\n', totalSizeYL, '\n', freeSizeYL)
+    # print(cpuCountListYL, '\n', memSizeListYL, '\n', totalSizeYL, '\n', freeSizeYL)
     return 0
+
 
 cpuCountListJY, memSizeListJY = [], []
 totalSizeJY, freeSizeJY = [], []
-#通过接口获取医疗云主机的虚拟cpu总数，内存大小
+
+
+# 通过接口获取医疗云主机的虚拟cpu总数，内存大小
 def JYInfo():
     # 获取主机的id，根据主机的id查询对应主机的虚拟cpu数目以及内存大小
     hostId_url = "http://10.20.0.7:8080/cas/casrs/host/"
@@ -195,16 +200,17 @@ def JYInfo():
     shareFileInfo = re.sub('totalSize', 'totalsize', shareFileInfo, count=0, flags=0)
     shareFileInfo = re.sub('freeSize', 'freesize', shareFileInfo, count=0, flags=0)
     soupSFJY = BeautifulSoup(shareFileInfo, "html.parser")
-    #将存储的单位换算成TB然后存入列表中
+    # 将存储的单位换算成TB然后存入列表中
     totalSizeSoupJY = soupSFJY.findAll('totalsize')
     for i in totalSizeSoupJY:
         totalSizeJY.append(round(int(i.string) / 1024 ** 2, 2))
     freeSizeSoupJY = soupSFJY.findAll('freesize')
     for i in freeSizeSoupJY:
         freeSizeJY.append(round(int(i.string) / 1024 ** 2, 2))
-    print(cpuCountListJY, '\n', memSizeListJY, '\n', totalSizeJY, '\n', freeSizeJY)
+    # print(cpuCountListJY, '\n', memSizeListJY, '\n', totalSizeJY, '\n', freeSizeJY)
     return 0
 
+#执行函数获取教育云和医疗云cpu和内存信息
 YLInfo()
 JYInfo()
 
@@ -217,8 +223,31 @@ cpuAllocatedResYL, memAllocatedResYL = [], []
 cpuAllocatedResJY, memAllocatedResJY = [], []
 print(cpuAllocatedResYL, memAllocatedResYL)
 
-for num in range(1, len(cpuCountListYL)):
-    cpuAllocatedResYL.append(num)
+print (len(cpuCountListYL))
+for num in range(0, len(cpuCountListYL)):
+    print (num)
+    cpuARYL = round(cpuDisRateYL[num] * 0.01 * cpuCountListYL[num])
+    cpuAllocatedResYL.append(cpuARYL)
+
+for num in range(0, len(memSizeListYL)):
+    memARYL = round(memDisRateYL[num] * 0.01 * memSizeListYL[num])
+    memAllocatedResYL.append(memARYL)
+
+for num in range(0, len(cpuCountListJY)):
+    cpuARJY = round(cpuDisRateJY[num] * 0.01 * cpuCountListJY[num])
+    cpuAllocatedResJY.append(cpuARJY)
+
+for num in range(0, len(memSizeListJY)):
+    memARJY = round(memDisRateJY[num] * 0.01 * memSizeListJY[num])
+    memAllocatedResJY.append(memARJY)
+
+print(cpuAllocatedResYL, '\n', memAllocatedResYL, '\n', cpuAllocatedResJY, '\n', memAllocatedResJY)
+
+#插入cpu和内存已分配使用资源列表到excel中
+insertDatatoFRE(4, 9, cpuAllocatedResYL)
+insertDatatoFRE(4, 10, memAllocatedResYL)
+insertDatatoFRE(16, 9, cpuAllocatedResJY)
+insertDatatoFRE(16, 10, memAllocatedResJY)
 
 finalResExcel.save('C:/Users/gaosi/Desktop/Work/资源统计/云平台资源信息test-2019.12.23.xlsx')
 print('C:/Users/gaosi/Desktop/Work/资源统计/云平台资源信息test-2019.12.23.xlsx已生成。')
